@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lmsq.shaxuntech.mapper.ShopShopcartMapper">
+  <resultMap id="BaseResultMap" type="com.lmsq.shaxuntech.pojo.ShopShopcart">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="logic_id" jdbcType="VARCHAR" property="logicId" />
+    <result column="u_id" jdbcType="VARCHAR" property="uId" />
+    <result column="item_id" jdbcType="VARCHAR" property="itemId" />
+    <result column="num" jdbcType="INTEGER" property="num" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="record_status" jdbcType="TINYINT" property="recordStatus" />
+  </resultMap>
+</mapper>

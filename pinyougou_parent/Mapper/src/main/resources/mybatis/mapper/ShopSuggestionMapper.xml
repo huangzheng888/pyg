@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lmsq.shaxuntech.mapper.ShopSuggestionMapper">
+  <resultMap id="BaseResultMap" type="com.lmsq.shaxuntech.pojo.ShopSuggestion">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="logic_id" jdbcType="VARCHAR" property="logicId" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="u_id" jdbcType="VARCHAR" property="uId" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="suggestion_type_id" jdbcType="VARCHAR" property="suggestionTypeId" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="record_status" jdbcType="TINYINT" property="recordStatus" />
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+  </resultMap>
+</mapper>

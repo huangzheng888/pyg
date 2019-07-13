@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lmsq.shaxuntech.mapper.SysPayTypeMapper">
+  <resultMap id="BaseResultMap" type="com.lmsq.shaxuntech.pojo.SysPayType">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="TINYINT" property="id" />
+    <result column="logic_id" jdbcType="VARCHAR" property="logicId" />
+    <result column="pay_type_name" jdbcType="VARCHAR" property="payTypeName" />
+    <result column="times" jdbcType="INTEGER" property="times" />
+    <result column="total_price" jdbcType="DECIMAL" property="totalPrice" />
+    <result column="access_address" jdbcType="VARCHAR" property="accessAddress" />
+    <result column="callback" jdbcType="VARCHAR" property="callback" />
+    <result column="record_status" jdbcType="TINYINT" property="recordStatus" />
+  </resultMap>
+</mapper>

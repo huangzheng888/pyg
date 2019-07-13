@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lmsq.shaxuntech.mapper.ShopAddressMapper">
+  <resultMap id="BaseResultMap" type="com.lmsq.shaxuntech.pojo.ShopAddress">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="u_id" jdbcType="VARCHAR" property="uId" />
+    <result column="logic_id" jdbcType="VARCHAR" property="logicId" />
+    <result column="province" jdbcType="VARCHAR" property="province" />
+    <result column="city" jdbcType="VARCHAR" property="city" />
+    <result column="area" jdbcType="VARCHAR" property="area" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="street" jdbcType="VARCHAR" property="street" />
+    <result column="is_default" jdbcType="TINYINT" property="isDefault" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="record_status" jdbcType="TINYINT" property="recordStatus" />
+  </resultMap>
+</mapper>

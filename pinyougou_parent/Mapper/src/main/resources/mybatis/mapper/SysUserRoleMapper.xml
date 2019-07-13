@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lmsq.shaxuntech.mapper.SysUserRoleMapper">
+  <resultMap id="BaseResultMap" type="com.lmsq.shaxuntech.pojo.SysUserRole">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="logic_id" jdbcType="VARCHAR" property="logicId" />
+    <result column="role_name" jdbcType="VARCHAR" property="roleName" />
+    <result column="message" jdbcType="VARCHAR" property="message" />
+    <result column="record_status" jdbcType="TINYINT" property="recordStatus" />
+  </resultMap>
+</mapper>

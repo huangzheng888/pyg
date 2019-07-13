@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lmsq.shaxuntech.mapper.SysAttachmentMapper">
+  <resultMap id="BaseResultMap" type="com.lmsq.shaxuntech.pojo.SysAttachment">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="logic_id" jdbcType="VARCHAR" property="logicId" />
+    <result column="file_name" jdbcType="VARCHAR" property="fileName" />
+    <result column="size" jdbcType="BIGINT" property="size" />
+    <result column="ext" jdbcType="VARCHAR" property="ext" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="hash" jdbcType="VARCHAR" property="hash" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="create_by" jdbcType="VARCHAR" property="createBy" />
+    <result column="record_status" jdbcType="INTEGER" property="recordStatus" />
+  </resultMap>
+</mapper>

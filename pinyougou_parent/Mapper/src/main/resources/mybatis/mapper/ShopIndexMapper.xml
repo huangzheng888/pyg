@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lmsq.shaxuntech.mapper.ShopIndexMapper">
+  <resultMap id="BaseResultMap" type="com.lmsq.shaxuntech.pojo.ShopIndex">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="logic_id" jdbcType="VARCHAR" property="logicId" />
+    <result column="top_banner" jdbcType="VARCHAR" property="topBanner" />
+    <result column="footer_banner" jdbcType="VARCHAR" property="footerBanner" />
+    <result column="QR_code" jdbcType="VARCHAR" property="qrCode" />
+    <result column="version" jdbcType="VARCHAR" property="version" />
+    <result column="nav_01" jdbcType="VARCHAR" property="nav01" />
+    <result column="nav_02" jdbcType="VARCHAR" property="nav02" />
+    <result column="nav_03" jdbcType="VARCHAR" property="nav03" />
+    <result column="nav_04" jdbcType="VARCHAR" property="nav04" />
+    <result column="left_session" jdbcType="VARCHAR" property="leftSession" />
+    <result column="right_session01" jdbcType="VARCHAR" property="rightSession01" />
+    <result column="right_session02" jdbcType="VARCHAR" property="rightSession02" />
+    <result column="record_status" jdbcType="TINYINT" property="recordStatus" />
+  </resultMap>
+</mapper>

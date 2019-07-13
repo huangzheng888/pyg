@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lmsq.shaxuntech.mapper.ShopOrdersItemsMidMapper">
+  <resultMap id="BaseResultMap" type="com.lmsq.shaxuntech.pojo.ShopOrdersItemsMid">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="order_id" jdbcType="VARCHAR" property="orderId" />
+    <result column="logic_id" jdbcType="VARCHAR" property="logicId" />
+    <result column="item_id" jdbcType="VARCHAR" property="itemId" />
+    <result column="num" jdbcType="INTEGER" property="num" />
+    <result column="item_name" jdbcType="VARCHAR" property="itemName" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="main_img" jdbcType="VARCHAR" property="mainImg" />
+    <result column="address_id" jdbcType="BIGINT" property="addressId" />
+    <result column="commont_status" jdbcType="BIT" property="commontStatus" />
+    <result column="u_id" jdbcType="VARCHAR" property="uId" />
+    <result column="record_status" jdbcType="TINYINT" property="recordStatus" />
+  </resultMap>
+</mapper>

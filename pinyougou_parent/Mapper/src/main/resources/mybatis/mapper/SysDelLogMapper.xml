@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lmsq.shaxuntech.mapper.SysDelLogMapper">
+  <resultMap id="BaseResultMap" type="com.lmsq.shaxuntech.pojo.SysDelLog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="logic_id" jdbcType="VARCHAR" property="logicId" />
+    <result column="u_id" jdbcType="VARCHAR" property="uId" />
+    <result column="reason" jdbcType="VARCHAR" property="reason" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="message" jdbcType="VARCHAR" property="message" />
+    <result column="del_time" jdbcType="TIMESTAMP" property="delTime" />
+    <result column="record_status" jdbcType="TINYINT" property="recordStatus" />
+  </resultMap>
+</mapper>
