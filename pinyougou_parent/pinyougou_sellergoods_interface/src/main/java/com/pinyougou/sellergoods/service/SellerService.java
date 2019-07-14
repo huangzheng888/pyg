@@ -39,10 +39,10 @@ public interface SellerService {
 
 	/**
 	 * 根据ID获取实体
-	 * @param id
+	 * @param sellerId
 	 * @return
 	 */
-	public TbSeller getById(Long id);
+	public TbSeller getById(String sellerId);
 	
 	
 	/**

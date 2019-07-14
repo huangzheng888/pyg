@@ -16,7 +16,7 @@ window.onload=function () {
 			//将要删除的id列表
 			ids:[],
 			//搜索包装对象
-			searchEntity:{}
+			searchEntity:{status:0}
 		},
 		methods:{
 			//查询所有
@@ -44,9 +44,9 @@ window.onload=function () {
 			//新增
 			add:function () {
 				var url = "../seller/add.do";
-				if(this.entity.id != null){
-					url = "../seller/update.do";
-				}
+                if(this.entity.sellerId != null){
+                    url = "../seller/update.do";
+                }
 				axios.post(url, this.entity).then(function (response) {
 					if (response.data.success) {
 						//刷新数据，刷新当前页
@@ -58,8 +58,8 @@ window.onload=function () {
 				});
 			},
 			//跟据id查询
-			getById:function (id) {
-				axios.get("../seller/getById.do?id="+id).then(function (response) {
+			getById:function (sellerId) {
+				axios.get("../seller/getById.do?sellerId="+sellerId).then(function (response) {
 					app.entity = response.data;
 				})
 			},
@@ -80,6 +80,12 @@ window.onload=function () {
                 }else {
                     alert("取消");
                 }
+			},
+			//审核操作
+            updateStatus(sellerId,status){
+				this.entity={"sellerId":sellerId,"status":status};
+				//审核
+				this.add();
 			}
 		},
 		//Vue对象初始化后，调用此逻辑

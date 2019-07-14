@@ -75,12 +75,12 @@ public class SellerController {
 	
 	/**
 	 * 获取实体
-	 * @param id
+	 * @param sellerId
 	 * @return
 	 */
 	@RequestMapping("/getById")
-	public TbSeller getById(Long id){
-		return sellerService.getById(id);		
+	public TbSeller getById(String sellerId){
+		return sellerService.getById(sellerId);
 	}
 	
 	/**
